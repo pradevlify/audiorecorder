@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    margin: auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding: 40px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+audio {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    left: 35px;
+
+}

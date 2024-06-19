@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Recorder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="recordui">
+        <h1>Audio Recorder</h1>
+        <button id="startRecord">Start Recording</button>
+        <button id="stopRecord" disabled>Stop Recording</button>
+        <p id="statusMessage">Status: Not recording</p>
+        <audio id="audioPlayback" controls style="display: none"></audio>
+      </div>
+      <div id="reportui">
+        <button id="fetchLastResponse">Fetch Last Response</button>
+
+        <div id="lastResponse">
+          <h2>Last Response Details:</h2>
+          <p id="responseCount">Count:</p>
+          <p id="responseStatus">Status:</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Recorder and Last Response</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 600px;
+      }
+
+      #recordui {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #recordui h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      #recordui button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      #recordui button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+
+      #statusMessage {
+        color: #666;
+        font-style: italic;
+      }
+
+      #audioPlayback {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      #reportui {
+        text-align: center;
+      }
+
+      #reportui button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+
+      #reportui button:hover {
+        background-color: #0056b3;
+      }
+
+      #lastResponse {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      #lastResponse h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      #lastResponse p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="recordui">
+        <h1>Audio Recorder</h1>
+        <button id="startRecord">Start Recording</button>
+        <button id="stopRecord" disabled>Stop Recording</button>
+        <p id="statusMessage">Status: Not recording</p>
+        <audio id="audioPlayback" controls style="display: none"></audio>
+      </div>
+      <div id="reportui">
+        <button id="fetchLastResponse">Get Count</button>
+
+        <div id="lastResponse">
+          <h2>Frequency Count:</h2>
+          <p id="responseCount">Count:</p>
+          <p id="responseStatus">Status:</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
